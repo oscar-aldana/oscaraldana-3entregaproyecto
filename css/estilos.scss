@@ -1,0 +1,244 @@
+
+  
+  /* Variables */
+  $color1:rgb(3, 3, 90);
+  $color2: darkred;
+  $color3: rgb(80, 78, 78);
+  $color4: orange;
+  $estilos1: Fantasy;
+  $estilos2: Cursive;
+  $tamano1: 24px;
+  $tamano2: 32px;
+  $tamano3: 40px;
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sec {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-caption {
+    color: white;
+    text-shadow: 20px;
+  }
+
+  .titulo-1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .parrafo-1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .text-muted {
+    text-align: center;
+    font-family: $estilos1;
+    font-size: $tamano1;
+    color: $color3;
+  }
+  .lead{
+      font-family: $estilos1;
+  }
+  .footer__redes {
+    text-align: center;
+  }
+  
+  li {
+    list-style: none;
+    margin: 25px;
+  }        
+    li:hover{
+            background-color: darkcyan;
+  }
+
+  .derechos {
+    text-align: center;
+  }
+  /* Uso de Variables*/
+  .footer {
+    background-color: $color4;
+  }
+  
+  .footer__direccion {
+    text-align: center;
+  }
+  
+  
+  /*animaciones*/
+  .matelca {
+    -webkit-animation-name: circulo;
+            animation-name: circulo;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes circulo {
+    0% {
+      border-radius: 0;
+      opacity: 0;
+    }
+    50% {
+      border-radius: 30px;
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      background-color: red;
+      opacity: 1;
+    }
+    100% {
+      border-radius: 75px;
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+    }
+  }
+  
+  @keyframes circulo {
+    0% {
+      border-radius: 0;
+      opacity: 0;
+    }
+    50% {
+      border-radius: 30px;
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      background-color: red;
+      opacity: 1;
+    }
+    100% {
+      border-radius: 75px;
+      -webkit-transform: translateX(300px);
+              transform: translateX(300px);
+      -webkit-transform: translateY(200px);
+              transform: translateY(200px);
+    }
+  }
+  
+  .text-muted {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: aparecer;
+            animation-name: aparecer;
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+/* Variables */
+
+
+  /* Anidacion y Variables*/
+
+ 
+    section {
+        display: inline-block;
+       padding-top: 130px;
+       padding-left: 30px;
+       padding-right: 20px;
+       .titu-1 {
+        text-align: center;
+        color: $color3;
+        font-family:$estilos1;
+    }
+    }
+    section {
+        display: inline-block;
+       padding-top: 130px;
+       padding-left: 30px;
+       padding-right: 20px;
+       .titu-2 {
+        text-align: center;
+        color: $color2;
+        font-family: $estilos2;
+        font-size: $tamano2;
+    }
+    }
+
+section {
+        display: inline-block;
+       padding-top: 130px;
+       padding-left: 30px;
+       padding-right: 20px;
+       .titu-3 {
+        text-align: center;
+        font-family: $estilos2;
+        color: $color3;
+        font-size: $tamano3;
+    }
+    }
+
+    section {
+        display: inline-block;
+       padding-top: 130px;
+       padding-left: 30px;
+       padding-right: 20px;
+          .parrafo-1 {
+        font-family: $estilos1;
+        color: $color1;
+        line-height: 30px;
+    }
+  }
+  section{
+    display: inline-block;
+   padding-top: 130px;
+   padding-left: 30px;
+   padding-right: 20px;
+    .parrafo-2{
+       font-family: $estilos2;
+       color: $color3;
+       line-height: 30px;
+       font-size: $tamano2;
+   }
+ }
+
+  section{
+    display: inline-block;
+   padding-top: 130px;
+   padding-left: 30px;
+   padding-right: 20px;
+    .parrafo-3{
+       font-family: $estilos2;
+       color: $color2;
+       line-height: 30px;
+       font-size: $tamano1;
+   }
+ }
+ 
+ 
+/* Uso del import para separar contenido del header*/
+
+  @import "_header"

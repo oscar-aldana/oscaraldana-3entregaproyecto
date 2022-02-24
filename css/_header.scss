@@ -1,0 +1,50 @@
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+  
+  a:hover {
+    color: white;
+  }
+  
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  header {
+    background-color: #e8f0dd;
+  }
+  
+  .matelca {
+    color: black;
+    text-shadow: 1px 1px 2px #180db6;
+    text-align: center;
+    background-image: url(https://thumbs.dreamstime.com/z/logotipo-del-servicio-electricista-de-la-compa%C3%B1%C3%ADa-que-se-ocupa-poder-134292839.jpg);
+    background-size: cover;
+    background-position-y: center;
+  }
+  
+  h1 {
+    font-size: 48px;
+    color: black;
+    text-shadow: 1px 1px 2px #05078d;
+  }
+  
+  ul {
+    text-decoration: none;
+  }
+  
+  .navbar {
+    height: 50px;
+  }
+  
+  .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px;
+  }
+  
