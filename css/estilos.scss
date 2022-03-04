@@ -2,7 +2,7 @@
   
   /* Variables */
   $color1:rgb(3, 3, 90);
-  $color2: darkred;
+  $color2: rgb(128, 83, 83);
   $color3: rgb(80, 78, 78);
   $color4: orange;
   $estilos1: Fantasy;
@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     }
+     
 
   .carousel-inner img {
     width: 100%;
@@ -77,15 +77,15 @@
   
   
   /*animaciones*/
-  .matelca {
-    -webkit-animation-name: circulo;
-            animation-name: circulo;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+  .matelca{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+    background-color: #2980B9;
   }
-  
+  .matelca:hover{
+    -webkit-transform: translate(10%);
+    transform: translate(10%);
+  }
   @-webkit-keyframes circulo {
     0% {
       border-radius: 0;
@@ -201,44 +201,200 @@ section {
     }
     }
 
-    section {
-        display: inline-block;
-       padding-top: 130px;
-       padding-left: 30px;
-       padding-right: 20px;
-          .parrafo-1 {
-        font-family: $estilos1;
-        color: $color1;
-        line-height: 30px;
-    }
-  }
-  section{
-    display: inline-block;
-   padding-top: 130px;
-   padding-left: 30px;
-   padding-right: 20px;
-    .parrafo-2{
-       font-family: $estilos2;
-       color: $color3;
-       line-height: 30px;
-       font-size: $tamano2;
-   }
+  p{
+   text-align: center;
  }
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: rgb(77, 75, 75);
+  height: 60px;
+}
+ .galpon{
+   height: 700px;
+   background-color: rgb(57, 19, 224);
+   margin-top: 35px;
+   margin-left: 15px;
+    /*opacity: 0.8;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+   }
+ ul{
+ .vinetas{
+  list-style-type: disc;
+  font-size: 20px;
+ }
+}
+ .valores{
+   background-color: black;
+   color: white;
+   height: 600px;
+ }
+ li:hover{
+  background-color: black;
+}
+.valores1{
+  margin-left: 140px;
+  padding-top: 70px;
+ }
+ .texto5{
+   padding-top: 70px;
+ }
+.texto4{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+section{
+  .titu-4{
+    text-align: left;
+    height: 50px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+}
+.adn1{
+  text-align: center;
+}
+.adn2{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+margin-left: 100px;
+margin-right: 100px;
+}
 
-  section{
-    display: inline-block;
-   padding-top: 130px;
-   padding-left: 30px;
-   padding-right: 20px;
-    .parrafo-3{
-       font-family: $estilos2;
-       color: $color2;
-       line-height: 30px;
-       font-size: $tamano1;
-   }
+
+//maps - incio
+
+$tamaño: (
+    /*Declaramos nuestro mapa*/
+    tam1: 18px,
+    tam2: 20px,
+    tam3: 25px,
+    );
+
+/*Creamos el bucle para usar los valores del mapa*/
+.texto4{ 
+@each $tamaño, $font in $tamaño {
+    .pfo--#{$tamaño} {
+        background-color: rgb(234, 236, 211);
+        height: 200px;
+        text-align: left;
+        font-size: $font;
+        line-height: 25px;
+        color: rgb(114, 110, 110);
+       text-shadow: 0 0 5px rgb(221, 153, 15) ;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-radius: $font;
+    }
+}
+}
+@media (max-width: 550px){
+  $tamaño: (
+    tam1: 12px,
+    tam2: 13px,
+    tam3: 16px,
+    );
+.texto4{ 
+@each $tamaño, $font in $tamaño {
+    .pfo--#{$tamaño} {
+        background-color: rgb(234, 236, 211);
+        height: 200px;
+        text-align: left;
+        font-size: $font;
+        line-height: 25px;
+        color: black;
+       text-shadow: 0 0 5px rgb(161, 109, 3) ;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: $font;
+    }
+}
+}
+}
+
+//maps -fin
+
+//mixins - inicio
+
+//estilos
+
+.texto5 .mision {
+  text-align: center;
+  height: 250px;
+  margin-right: 20px;
+  margin-left: 20px;
+ 
+}
+
+@mixin estilos($font-family, $font-size, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $color;
+}
+
+.texto5 .mision {
+  @include estilos(monospace, 20px , rgb(5, 5, 114));
+  
+}
+font-family: monospace;
+.texto5 .vision {
+  @include estilos(Verdana, 20px, rgb(102, 100, 100));
+  text-align: center;
+  height: 250px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  
+   
+}
+//mixins - fin
+
+@media (max-width: 550px){
+  .texto5 .mision {
+    @include estilos(monospace, 16px , rgb(5, 5, 59));
+    
+  }
+  .texto5 .vision {
+    @include estilos(Arial, 16px, rgb(102, 100, 100));
+}
+}
+
+.falta{
+  background-color: rgb(77, 75, 75);
+  color: white;
+}
+  }
+
+
+
+//extends - inicio
+section{
+.parrafo-1 {
+  font-family: $estilos1;
+ 
+  line-height: 30px;
+}
+}
+section{
+.parrafo-2 {
+  @extend .parrafo-1;
+  font-family: $estilos2;
+ color: $color3;
+ font-size: $tamano2;
+}
+}
+section{
+.parrafo-3{
+  @extend .parrafo-1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: $color2;
+  font-size: $tamano1;
  }
- 
- 
+}
+
+//extends - fin
 /* Uso del import para separar contenido del header*/
 
   @import "_header"
+
+  
