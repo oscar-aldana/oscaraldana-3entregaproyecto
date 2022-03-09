@@ -1,68 +1,57 @@
-
-  
-  /* Variables */
-  $color1:rgb(3, 3, 90);
-  $color2: rgb(128, 83, 83);
-  $color3: rgb(80, 78, 78);
-  $color4: orange;
-  $estilos1: Fantasy;
-  $estilos2: Cursive;
-  $tamano1: 24px;
-  $tamano2: 32px;
-  $tamano3: 40px;
-
-  * {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-     
-
+/* Variables */
+$color1:rgb(3, 3, 90);
+$color2: rgb(128, 83, 83);
+$color3: rgb(80, 78, 78);
+$color4: orange;
+$estilos1: Fantasy;
+$estilos2: Cursive;
+$tamano1: 24px;
+$tamano2: 32px;
+$tamano3: 40px;
+$ancho1: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   .carousel-inner img {
-    width: 100%;
-    height: 100%;
+    width: $ancho1;
+    height: $ancho1;
   }
-  
   .sec {
-    width: 100%;
-    height: 100%;
+    width: $ancho1;
+    height: $ancho1;
   }
-  
   .carousel-caption {
     color: white;
     text-shadow: 20px;
   }
-
   .titulo-1 {
     text-align: center;
     font-size: 40px;
   }
-  
   .parrafo-1 {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
   }
-  
   .text-muted {
     text-align: center;
     font-family: $estilos1;
     font-size: $tamano1;
     color: $color3;
   }
-  .lead{
-      font-family: $estilos1;
+  .lead {
+    font-family: $estilos1;
   }
   .footer__redes {
     text-align: center;
   }
-  
   li {
     list-style: none;
     margin: 25px;
-  }        
-    li:hover{
-            background-color: darkcyan;
   }
-
+  li:hover {
+    background-color: darkcyan;
+  }
   .derechos {
     text-align: center;
   }
@@ -70,19 +59,16 @@
   .footer {
     background-color: $color4;
   }
-  
   .footer__direccion {
     text-align: center;
   }
-  
-  
   /*animaciones*/
-  .matelca{
+  .matelca {
     -webkit-transition: 1s linear;
     transition: 1s linear;
     background-color: #2980B9;
   }
-  .matelca:hover{
+  .matelca:hover {
     -webkit-transform: translate(10%);
     transform: translate(10%);
   }
@@ -94,53 +80,30 @@
     50% {
       border-radius: 30px;
       -webkit-transform: translateX(300px);
-              transform: translateX(300px);
+      transform: translateX(300px);
       background-color: red;
       opacity: 1;
     }
     100% {
       border-radius: 75px;
       -webkit-transform: translateX(300px);
-              transform: translateX(300px);
+      transform: translateX(300px);
       -webkit-transform: translateY(200px);
-              transform: translateY(200px);
+      transform: translateY(200px);
     }
   }
-  
-  @keyframes circulo {
-    0% {
-      border-radius: 0;
-      opacity: 0;
-    }
-    50% {
-      border-radius: 30px;
-      -webkit-transform: translateX(300px);
-              transform: translateX(300px);
-      background-color: red;
-      opacity: 1;
-    }
-    100% {
-      border-radius: 75px;
-      -webkit-transform: translateX(300px);
-              transform: translateX(300px);
-      -webkit-transform: translateY(200px);
-              transform: translateY(200px);
-    }
-  }
-  
   .text-muted {
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-name: aparecer;
-            animation-name: aparecer;
+    animation-name: aparecer;
     -webkit-animation-delay: 5s;
-            animation-delay: 5s;
+    animation-delay: 5s;
     -webkit-animation-direction: alternate;
-            animation-direction: alternate;
+    animation-direction: alternate;
     -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
   }
-  
   @-webkit-keyframes aparecer {
     0% {
       opacity: 0;
@@ -149,7 +112,6 @@
       opacity: 1;
     }
   }
-  
   @keyframes aparecer {
     0% {
       opacity: 0;
@@ -158,243 +120,298 @@
       opacity: 1;
     }
   }
-/* Variables */
+  .icono2:hover {
+    transform: scale(1.1);
+    transition: all 0.75s;
+  }
 
+  /* Variables */
 
   /* Anidacion y Variables*/
 
- 
-    section {
-        display: inline-block;
-       padding-top: 130px;
-       padding-left: 30px;
-       padding-right: 20px;
-       .titu-1 {
-        text-align: center;
-        color: $color3;
-        font-family:$estilos1;
+  section {
+    display: inline-block;
+    padding-top: 130px;
+    padding-left: 30px;
+    padding-right: 20px;
+    .titu-1 {
+      text-align: center;
+      color: $color3;
+      font-family: $estilos1;
     }
+  }
+  section {
+    display: inline-block;
+    padding-top: 130px;
+    padding-left: 30px;
+    padding-right: 20px;
+    .titu-2 {
+      text-align: center;
+      color: $color2;
+      font-family: $estilos2;
+      font-size: $tamano2;
     }
-    section {
-        display: inline-block;
-       padding-top: 130px;
-       padding-left: 30px;
-       padding-right: 20px;
-       .titu-2 {
-        text-align: center;
-        color: $color2;
-        font-family: $estilos2;
-        font-size: $tamano2;
+  }
+  section {
+    display: inline-block;
+    padding-top: 130px;
+    padding-left: 30px;
+    padding-right: 20px;
+    .titu-3 {
+      text-align: center;
+      font-family: $estilos2;
+      color: $color3;
+      font-size: $tamano3;
     }
+  }
+  p {
+    text-align: center;
+  }
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(77, 75, 75);
+    height: 80px;
+  }
+  .galpon {
+    height: 700px;
+    background-color: rgb(57, 19, 224);
+    margin-top: 35px;
+    margin-left: 15px;
+  }
+  ul {
+    .vinetas {
+      list-style-type: disc;
+      font-size: 20px;
     }
-
-section {
-        display: inline-block;
-       padding-top: 130px;
-       padding-left: 30px;
-       padding-right: 20px;
-       .titu-3 {
-        text-align: center;
-        font-family: $estilos2;
-        color: $color3;
-        font-size: $tamano3;
-    }
-    }
-
-  p{
-   text-align: center;
- }
-h2{
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-align: center;
-  background-color: rgb(77, 75, 75);
-  height: 60px;
-}
- .galpon{
-   height: 700px;
-   background-color: rgb(57, 19, 224);
-   margin-top: 35px;
-   margin-left: 15px;
-    /*opacity: 0.8;
-    filter:alpha(opacity=40); /* For IE8 and earlier */
-   }
- ul{
- .vinetas{
-  list-style-type: disc;
-  font-size: 20px;
- }
-}
- .valores{
-   background-color: black;
-   color: white;
-   height: 600px;
- }
- li:hover{
-  background-color: black;
-}
-.valores1{
-  margin-left: 140px;
-  padding-top: 70px;
- }
- .texto5{
-   padding-top: 70px;
- }
-.texto4{
+  }
+  .valores {
+    background-color: black;
+    color: white;
+    height: 600px;
+  }
+  li:hover {
+    background-color: black;
+  }
+  .valores1 {
+    margin-left: 80px;
+    padding-top: 70px;
+  }
+  .texto5 {
+    padding-top: 70px;
+  }
+  .texto4 {
     padding-top: 30px;
     padding-left: 10px;
     padding-right: 20px;
-}
-section{
-  .titu-4{
-    text-align: left;
-    height: 50px;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-}
-.adn1{
-  text-align: center;
-}
-.adn2{
-font-family: Arial, Helvetica, sans-serif;
-font-size: 18px;
-margin-left: 100px;
-margin-right: 100px;
-}
+  }
+  section {
+    .titu-4 {
+      text-align: left;
+      height: 50px;
+      font-size: 30px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+  }
+  .adn1 {
+    background-color: #1b767c;
+  }
+  .adn1 {
+    text-align: center;
+  }
+  .adn2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
+  //maps - incio
 
-//maps - incio
-
-$tamaño: (
+  $tamaño: (
     /*Declaramos nuestro mapa*/
     tam1: 18px,
     tam2: 20px,
     tam3: 25px,
-    );
+  );
 
-/*Creamos el bucle para usar los valores del mapa*/
-.texto4{ 
-@each $tamaño, $font in $tamaño {
-    .pfo--#{$tamaño} {
-        background-color: rgb(234, 236, 211);
+  /*Creamos el bucle para usar los valores del mapa*/
+  .texto4 {
+
+    @each $tamaño,
+    $font in $tamaño {
+      .pfo--#{$tamaño} {
+        background-color: rgb(226, 231, 224);
         height: 200px;
         text-align: left;
         font-size: $font;
         line-height: 25px;
         color: rgb(114, 110, 110);
-       text-shadow: 0 0 5px rgb(221, 153, 15) ;
+        text-shadow: 0 0 5px rgb(221, 153, 15);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         border-radius: $font;
+      }
     }
-}
-}
-@media (max-width: 550px){
-  $tamaño: (
-    tam1: 12px,
-    tam2: 13px,
-    tam3: 16px,
-    );
-.texto4{ 
-@each $tamaño, $font in $tamaño {
-    .pfo--#{$tamaño} {
-        background-color: rgb(234, 236, 211);
-        height: 200px;
-        text-align: left;
-        font-size: $font;
-        line-height: 25px;
-        color: black;
-       text-shadow: 0 0 5px rgb(161, 109, 3) ;
-        font-family: Arial, Helvetica, sans-serif;
-        border-radius: $font;
+  }
+  @media (max-width: 550px) {
+    $tamaño: (tam1: 12px,
+        tam2: 13px,
+        tam3: 16px,
+      );
+    .texto4 {
+      @each $tamaño,
+      $font in $tamaño {
+        .pfo--#{$tamaño} {
+          background-color: rgb(234, 236, 211);
+          height: 200px;
+          text-align: left;
+          font-size: $font;
+          line-height: 25px;
+          color: black;
+          text-shadow: 0 0 5px rgb(161, 109, 3);
+          font-family: Arial, Helvetica, sans-serif;
+          border-radius: $font;
+        }
+      }
     }
-}
-}
-}
+  }
 
-//maps -fin
+  //maps -fin
 
-//mixins - inicio
+  //mixins - inicio
 
-//estilos
+  //estilos
 
-.texto5 .mision {
-  text-align: center;
-  height: 250px;
-  margin-right: 20px;
-  margin-left: 20px;
- 
-}
-
-@mixin estilos($font-family, $font-size, $color) {
-  font-family: $font-family;
-  font-size: $font-size;
-  color: $color;
-}
-
-.texto5 .mision {
-  @include estilos(monospace, 20px , rgb(5, 5, 114));
-  
-}
-font-family: monospace;
-.texto5 .vision {
-  @include estilos(Verdana, 20px, rgb(102, 100, 100));
-  text-align: center;
-  height: 250px;
-  margin-right: 20px;
-  margin-left: 20px;
-
-  
-   
-}
-//mixins - fin
-
-@media (max-width: 550px){
   .texto5 .mision {
-    @include estilos(monospace, 16px , rgb(5, 5, 59));
-    
+    text-align: center;
+    height: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
+  @mixin estilos($font-family, $font-size, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+  }
+  .texto5 .mision {
+    @include estilos(monospace, 20px, rgb(2, 2, 77));
+  }
+  font-family: monospace;
   .texto5 .vision {
-    @include estilos(Arial, 16px, rgb(102, 100, 100));
-}
-}
-
-.falta{
-  background-color: rgb(77, 75, 75);
-  color: white;
-}
+    @include estilos(Verdana, 20px, rgb(102, 100, 100));
+    text-align: center;
+    height: 250px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
 
+  //mixins - fin
 
-
+  @media (max-width: 550px) {
+    .texto5 .mision {
+      @include estilos(monospace, 16px, rgb(5, 5, 59));
+    }
+    .texto5 .vision {
+      @include estilos(Arial, 16px, rgb(102, 100, 100));
+    }
+  }
+  .falta {
+    background-color: rgb(77, 75, 75);
+    color: white;
+    width: $ancho1;
+    height: 180px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
 //extends - inicio
-section{
-.parrafo-1 {
-  font-family: $estilos1;
- 
-  line-height: 30px;
+section {
+  .parrafo-1 {
+    font-family: $estilos1;
+
+    line-height: 30px;
+  }
 }
+section {
+  .parrafo-2 {
+    @extend .parrafo-1;
+    font-family: $estilos2;
+    color: $color3;
+    font-size: $tamano2;
+  }
 }
-section{
-.parrafo-2 {
-  @extend .parrafo-1;
-  font-family: $estilos2;
- color: $color3;
- font-size: $tamano2;
-}
-}
-section{
-.parrafo-3{
-  @extend .parrafo-1;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: $color2;
-  font-size: $tamano1;
- }
+section {
+  .parrafo-3 {
+    @extend .parrafo-1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color2;
+    font-size: $tamano1;
+  }
 }
 
 //extends - fin
+
+.icono1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(114, 112, 112);
+  font-size: 15px;
+  font-style: italic;
+  line-height: 23px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.icono2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+main {
+  background: #f4f4f4;
+}
+.galeria1 {
+  height: 150px;
+  text-align: center;
+  padding-top: 40px;
+  background: #a770ef;
+  background: -webkit-linear-gradient(to right, #056d80, #f3e38b, #fdb99b);
+  background: linear-gradient(to right, #1b767c, #ecac4c, #f19c1c);
+}
+.producto {
+  background-color: #e0dede;
+}
+.row .producto1 {
+  width: $ancho1;
+  padding-bottom: 30px;
+  text-align: end;
+}
+.row .producto2 {
+  padding-bottom: 30px;
+  width: $ancho1;
+  text-align: end;
+}
+.row .card-img-top:hover {
+  transform: scale(1.1);
+  transition: all 0.75s;
+}
+@media only screen and (min-width: 550px) and (max-width: 1050px) {
+  .adn2 {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 650px) {
+  .adn2 {
+    font-size: 8px;
+  }
+  .lead {
+    font-size: 12px;
+  }
+  .portada {
+    font-size: 17px;
+  }
+}
 /* Uso del import para separar contenido del header*/
-
-  @import "_header"
-
-  
+@import "_header"
